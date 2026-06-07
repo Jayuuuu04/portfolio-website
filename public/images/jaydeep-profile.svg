@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-label="Jaydeep Kadiya profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)" rx="80" />
+  <circle cx="320" cy="260" r="130" fill="#111827" stroke="#38bdf8" stroke-width="14" />
+  <path d="M180 520c0-85 70-155 155-155s155 70 155 155" fill="#111827" stroke="#38bdf8" stroke-width="14" />
+  <text x="50%" y="54%" text-anchor="middle" font-family="Inter, sans-serif" font-size="110" fill="#e2e8f0" font-weight="700">JK</text>
+  <text x="50%" y="76%" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" fill="#94a3b8">Jaydeep Kadiya</text>
+</svg>

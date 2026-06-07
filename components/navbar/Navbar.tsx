@@ -11,6 +11,7 @@ const navItems = [
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Academics', href: '#academics' },
   { label: 'Blogs', href: '#blogs' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -28,8 +29,8 @@ export function Navbar() {
       <div className="flex items-center gap-3 rounded-full border border-white/10 bg-slate-950/70 px-4 py-2 shadow-lg shadow-slate-950/20 backdrop-blur-xl">
         <span className="inline-flex h-3 w-3 rounded-full bg-cyan-400" />
         <div>
-          <p className="text-sm font-semibold text-cyan-300">Portfolio</p>
-          <p className="text-xs text-slate-400">Premium by design</p>
+          <p className="text-sm font-semibold text-cyan-300">Jaydeep Kadiya</p>
+          <p className="text-xs text-slate-400">Backend Developer</p>
         </div>
       </div>
 

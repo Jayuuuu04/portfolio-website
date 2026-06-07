@@ -17,7 +17,7 @@ export function AboutSection() {
         <div className="mt-8 grid gap-6 lg:grid-cols-[0.85fr_0.75fr]">
           <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-7 shadow-xl shadow-slate-950/30">
             <p className="leading-7 text-slate-300">
-              I specialize in building premium web experiences with modern frontend stacks. My work blends thoughtful interface design, accessible development, and optimized performance to help brands stand out.
+              I specialize in building premium web experiences with a backend-first mindset. My work blends PHP and Node.js systems, SQL database design, API integration, and polished frontend interfaces.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-7 shadow-xl shadow-slate-950/30">

@@ -4,6 +4,7 @@ import { AboutSection } from '../components/hero/AboutSection';
 import { Projects } from '../components/projects/Projects';
 import { Experience } from '../components/experience/Experience';
 import { Skills } from '../components/skills/Skills';
+import { Academics } from '../components/academics/Academics';
 import { Blog } from '../components/blog/Blog';
 import { Contact } from '../components/contact/Contact';
 import { Footer } from '../components/footer/Footer';
@@ -20,6 +21,7 @@ export default function HomePage() {
           <Projects />
           <Experience />
           <Skills />
+          <Academics />
           <Blog />
           <Contact />
           <Footer />
