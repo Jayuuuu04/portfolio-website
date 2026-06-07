@@ -22,8 +22,8 @@ export function Academics() {
           viewport={{ once: true, amount: 0.3 }}
           className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-xl shadow-slate-950/20"
         >
-          <h3 className="text-2xl font-semibold text-slate-100">B.Sc. Computer Science</h3>
-          <p className="mt-4 text-slate-300">Developed strong backend fundamentals, data structures, and system design knowledge.</p>
+          <h3 className="text-2xl font-semibold text-slate-100">10th Grade - Swaminarayan Vidhyalaya, Bhuj</h3>
+          <p className="mt-4 text-slate-300">Completed secondary schooling with 76% in 2016, building a strong foundation in science and mathematics.</p>
         </motion.article>
 
         <motion.article
@@ -33,8 +33,8 @@ export function Academics() {
           transition={{ delay: 0.05 }}
           className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-xl shadow-slate-950/20"
         >
-          <h3 className="text-2xl font-semibold text-slate-100">Backend focus</h3>
-          <p className="mt-4 text-slate-300">Studied API architecture, SQL database modeling, and server-side integration with Node.js and PHP.</p>
+          <h3 className="text-2xl font-semibold text-slate-100">11th & 12th Science - Swaminarayan Vidhyalaya, Bhuj</h3>
+          <p className="mt-4 text-slate-300">Completed higher secondary science with 67% in 2018, strengthening analytical skills and technical understanding.</p>
         </motion.article>
 
         <motion.article
@@ -44,8 +44,8 @@ export function Academics() {
           transition={{ delay: 0.1 }}
           className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 shadow-xl shadow-slate-950/20"
         >
-          <h3 className="text-2xl font-semibold text-slate-100">Tools & certifications</h3>
-          <p className="mt-4 text-slate-300">Experienced with Git, GitHub, AWS, cloud deployment pipelines, and production-ready backend workflows.</p>
+          <h3 className="text-2xl font-semibold text-slate-100">B.E. Computer Science & Engineering - HJD College (GTU)</h3>
+          <p className="mt-4 text-slate-300">Graduated in 2023 with an 8.94 CGPA, focusing on backend systems, software engineering, and real-world integration projects.</p>
         </motion.article>
       </div>
     </section>
