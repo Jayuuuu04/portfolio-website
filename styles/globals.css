@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   color-scheme: dark;
@@ -50,6 +48,7 @@ html.light a {
 
 @layer utilities {
   .glass-card {
-    @apply rounded-3xl border border-white/10 bg-slate-950/70 shadow-glow backdrop-blur-xl;
+    @apply rounded-3xl border border-white/10 bg-slate-950/70 backdrop-blur-xl;
+    box-shadow: 0 25px 80px rgba(14, 165, 233, 0.18);
   }
 }
