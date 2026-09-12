@@ -1,17 +1,17 @@
 export const blogPosts = [
   {
-    title: 'Designing Premium Landing Pages with Motion',
-    summary: 'A practical guide to combining brand storytelling, animations, and conversion-focused layouts in modern web projects.',
+    title: 'Building Scalable REST APIs with Node.js and MySQL',
+    summary: 'A practical walkthrough of designing clean API architecture, handling authentication, and optimising database queries for production workloads.',
     url: '#',
   },
   {
-    title: 'Next.js 15: Building Fast Interfaces for Growth',
-    summary: 'How to architect scalable page routes, SEO metadata, and dynamic experiences using the latest Next.js app router patterns.',
+    title: 'PHP Best Practices for Modern Backend Development',
+    summary: 'How to write maintainable, secure PHP code using modern patterns — from dependency injection to proper error handling and API design.',
     url: '#',
   },
   {
-    title: 'Why Tailwind and Shadcn UI Work for Teams',
-    summary: 'The advantages of composable design systems, themeable components, and developer-friendly styling in modern frontend stacks.',
+    title: 'Automating Deployments with GitHub Actions and AWS',
+    summary: 'Step-by-step guide to setting up CI/CD pipelines that build, test, and deploy your backend applications to AWS with zero downtime.',
     url: '#',
   },
 ];

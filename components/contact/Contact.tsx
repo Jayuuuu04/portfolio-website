@@ -94,7 +94,7 @@ export function Contact() {
               {status === 'loading' ? 'Sending…' : 'Send message'}
             </button>
             <p className="text-sm text-slate-400">
-              Prefer email? <span className="font-semibold text-slate-100">hello@yourdomain.com</span>
+              Prefer email? <a href="mailto:jaydeepkadiya005@gmail.com" className="font-semibold text-slate-100 hover:text-cyan-200 transition">jaydeepkadiya005@gmail.com</a>
             </p>
           </div>
         </form>

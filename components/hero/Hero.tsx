@@ -14,7 +14,7 @@ export function Hero() {
             Jaydeep Kadiya — Backend Developer
           </span>
           <h1 className="mt-8 text-5xl font-semibold text-slate-100 sm:text-6xl">
-            Building resilient backend systems and seamless integrations for modern businesses.
+            Resilient backends. Clean APIs. Reliable cloud deployments.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
             I specialise in PHP and Node.js backend development, SQL database design, cloud deployment, and connecting services to create powerful end-to-end solutions.
@@ -22,11 +22,11 @@ export function Hero() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-5 shadow-xl shadow-slate-950/20">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Core expertise</p>
-              <p className="mt-4 text-slate-200">PHP, Node.js, SQL databases, APIs, AWS, GitHub integration.</p>
+              <p className="mt-4 text-slate-200">PHP · Node.js · MySQL · REST APIs · AWS</p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-5 shadow-xl shadow-slate-950/20">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Integration focus</p>
-              <p className="mt-4 text-slate-200">Backend architecture, microservices, cloud deployment and high-quality data workflows.</p>
+              <p className="mt-4 text-slate-200">Third-party APIs, CI/CD pipelines, GitHub workflows, cloud-native deployments.</p>
             </div>
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -45,7 +45,7 @@ export function Hero() {
             <div className="mt-6 space-y-4">
               <div>
                 <p className="text-sm uppercase tracking-[0.25em] text-slate-400">Backend Engineering</p>
-                <h2 className="mt-2 text-2xl font-semibold text-white">API-first systems</h2>
+                <h2 className="mt-2 text-2xl font-semibold text-white">Backend-first systems</h2>
               </div>
               <p className="leading-7 text-slate-300">
                 I design backend services that connect frontend products to databases, external APIs, and cloud platforms using robust, maintainable architectures.

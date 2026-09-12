@@ -3,12 +3,12 @@ import { ThemeProvider } from '../components/theme/ThemeProvider';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Premium Portfolio | Developer Showcase',
-  description: 'A polished one-page developer portfolio showcasing experience, projects, skills, blogs, and contact.',
-  metadataBase: new URL('https://your-portfolio.vercel.app'),
+  title: 'Jaydeep Kadiya | Backend Developer',
+  description: 'Backend developer specialising in PHP, Node.js, SQL databases, REST APIs, and AWS cloud deployment.',
+  metadataBase: new URL('https://jaydeepkadiya.vercel.app'),
   openGraph: {
-    title: 'Premium Portfolio | Developer Showcase',
-    description: 'A polished one-page developer portfolio showcasing experience, projects, skills, blogs, and contact.',
+    title: 'Jaydeep Kadiya | Backend Developer',
+    description: 'Backend developer specialising in PHP, Node.js, SQL databases, REST APIs, and AWS cloud deployment.',
     type: 'website',
   },
 };

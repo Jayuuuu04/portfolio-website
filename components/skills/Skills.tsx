@@ -12,7 +12,7 @@ export function Skills() {
           <h2 className="mt-3 text-4xl font-semibold text-slate-100">The stack behind elegant digital products.</h2>
         </div>
         <p className="max-w-xl text-sm leading-7 text-slate-400">
-          Modern frontend tooling with a focus on performance, design systems, and scalable developer experience.
+          Backend and cloud tooling with a focus on reliability, performance, and clean developer workflows.
         </p>
       </div>
 

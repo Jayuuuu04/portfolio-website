@@ -1,20 +1,31 @@
 export const experience = [
   {
-    role: 'Senior Frontend Engineer',
-    company: 'Aurora Labs',
-    date: '2024 - Present',
-    highlights: ['Designed polished interface systems for enterprise products.', 'Led UI architecture for reusable Shadcn-inspired component libraries.', 'Improved page conversion and accessibility across mobile-first experiences.'],
+    role: 'Backend Developer',
+    company: 'Freelance / Contract',
+    date: '2023 - Present',
+    highlights: [
+      'Designed and maintained PHP and Node.js REST APIs for client web applications.',
+      'Managed MySQL database schemas, query optimisation, and data migrations.',
+      'Deployed applications on AWS EC2 and configured CI/CD pipelines via GitHub Actions.',
+    ],
   },
   {
-    role: 'UI/UX Developer',
-    company: 'Skyline Studio',
-    date: '2022 - 2024',
-    highlights: ['Delivered responsive product launches with smooth animations.', 'Built data-focused dashboards and crafted premium brand visuals.', 'Collaborated with marketing teams to optimize SEO and user journeys.'],
+    role: 'Junior Backend Developer',
+    company: 'Tech Startup (Internship → Full-time)',
+    date: '2022 - 2023',
+    highlights: [
+      'Built backend modules for a SaaS product using PHP and MySQL.',
+      'Integrated third-party APIs including payment gateways and email services.',
+      'Collaborated with frontend teams to define and document REST API contracts.',
+    ],
   },
   {
-    role: 'Frontend Intern',
-    company: 'Pulse Interactive',
+    role: 'Web Development Intern',
+    company: 'Local IT Firm',
     date: '2021 - 2022',
-    highlights: ['Implemented modular component patterns using React and TypeScript.', 'Supported rapid product sprints with clear, polished UI deliverables.'],
+    highlights: [
+      'Developed dynamic web pages using PHP and JavaScript.',
+      'Assisted in database design and wrote optimised SQL queries.',
+    ],
   },
 ];
