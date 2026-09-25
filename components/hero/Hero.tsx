@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Download, ArrowRight, MapPin, Mail } from 'lucide-react';
+import { Download, ArrowRight, MapPin, Mail, Rocket, CreditCard, Cloud } from 'lucide-react';
 
 const GitHubSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -20,6 +20,13 @@ const LinkedInSvg = () => (
 );
 
 const techStack = ['PHP', 'Node.js', 'Next.js', 'MySQL', 'AWS', 'REST APIs'];
+
+// Each of these maps to something real in data/projects.ts + data/experience.ts.
+const proofPoints = [
+  { icon: Rocket, title: 'Live in production', sub: 'Enterprise SaaS at x-pense.cloud' },
+  { icon: CreditCard, title: 'Payments integrated', sub: 'Razorpay · Omnicard · Shiprocket' },
+  { icon: Cloud, title: 'Shipped on AWS', sub: 'EC2 · S3 · RDS with CI/CD' },
+];
 
 const quickStats = [
   { value: '2+', label: 'Years Exp.' },
@@ -58,14 +65,14 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mt-6"
           >
-            <h1 className="text-5xl font-bold tracking-tight text-slate-100 sm:text-6xl lg:text-7xl">
-              Jaydeep<br />
-              <span className="text-cyan-400">Kadiya</span>
-            </h1>
-            <p className="mt-4 text-xl font-medium text-slate-300 sm:text-2xl">
-              Backend Developer
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
+              Jaydeep Kadiya <span className="mx-1 text-slate-700">/</span> Backend Developer
             </p>
-            <div className="mt-2 flex items-center gap-2 text-sm text-slate-500">
+            <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-slate-100 sm:text-5xl lg:text-6xl">
+              I build systems that{' '}
+              <span className="text-cyan-400">power real products.</span>
+            </h1>
+            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-slate-500">
               <MapPin className="h-3.5 w-3.5" />
               Bhuj, Gujarat, India
               <span className="mx-1 text-slate-700">·</span>
@@ -81,8 +88,30 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-lg text-base leading-8 text-slate-400"
           >
-            I build scalable backend systems, clean REST APIs, and production-ready integrations. Currently working at <span className="font-medium text-slate-200">Aeonx Digital Technology Ltd.</span> shipping real SaaS products used by enterprises.
+            I design scalable APIs, SaaS platforms, payment integrations and database-driven systems using{' '}
+            <span className="font-medium text-slate-200">Node.js, PHP, MySQL and AWS</span>. Currently at{' '}
+            <span className="font-medium text-slate-200">Aeonx Digital Technology Ltd.</span>, where I ship
+            software enterprises depend on every day.
           </motion.p>
+
+          {/* proof points */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="mt-7 grid max-w-xl gap-3 sm:grid-cols-3"
+          >
+            {proofPoints.map(({ icon: Icon, title, sub }) => (
+              <div
+                key={title}
+                className="rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3.5 transition hover:border-cyan-400/30"
+              >
+                <Icon className="h-4 w-4 text-cyan-400" />
+                <p className="mt-2.5 text-xs font-semibold text-slate-200">{title}</p>
+                <p className="mt-0.5 text-[11px] leading-5 text-slate-500">{sub}</p>
+              </div>
+            ))}
+          </motion.div>
 
           {/* tech stack pills */}
           <motion.div
