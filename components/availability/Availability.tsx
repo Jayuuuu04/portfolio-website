@@ -42,7 +42,7 @@ export function Availability() {
         <div className="mt-7 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="flex items-baseline gap-1.5">
-              <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-5xl font-bold text-transparent sm:text-6xl">
+              <span className="text-5xl font-bold text-emerald-400 sm:text-6xl">
                 {availability.rate}
               </span>
               <span className="text-lg font-medium text-slate-400">{availability.rateUnit}</span>

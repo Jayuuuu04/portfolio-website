@@ -5,7 +5,7 @@ export const availability = {
   status: 'Available for freelance & contract work',
 
   // Headline rate. `rate` is rendered large; `rateUnit` sits next to it.
-  rate: '$50',
+  rate: '$5',
   rateUnit: '/hour',
 
   pitch:
