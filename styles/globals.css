@@ -8,6 +8,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Keeps #section targets clear of the sticky header (~92px tall). */
+  scroll-padding-top: 6rem;
 }
 
 body {
