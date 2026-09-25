@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { GitFork, Mail } from 'lucide-react';
+import { whatsappUrl } from '../../data/contact';
+import { WhatsAppIcon } from '../ui/WhatsAppIcon';
 
 const LinkedInSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -19,6 +21,7 @@ const socials = [
   { icon: GitHubSvg, href: 'https://github.com/Jayuuuu04', label: 'GitHub' },
   { icon: LinkedInSvg, href: 'https://linkedin.com/in/jaydeepkadiya005', label: 'LinkedIn' },
   { icon: Mail, href: 'mailto:jaydeepkadiya005@gmail.com', label: 'Email' },
+  { icon: WhatsAppIcon, href: whatsappUrl(), label: 'WhatsApp' },
 ];
 
 export function Footer() {
@@ -37,7 +40,11 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-700/70 bg-slate-900/70 text-slate-300 transition hover:border-cyan-300/70 hover:text-cyan-200"
+              className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-700/70 bg-slate-900/70 text-slate-300 transition ${
+                label === 'WhatsApp'
+                  ? 'hover:border-emerald-300/70 hover:text-emerald-300'
+                  : 'hover:border-cyan-300/70 hover:text-cyan-200'
+              }`}
             >
               <Icon className="h-4 w-4" />
             </Link>

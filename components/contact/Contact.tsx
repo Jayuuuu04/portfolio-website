@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
+import { whatsappUrl } from '../../data/contact';
+import { WhatsAppIcon } from '../ui/WhatsAppIcon';
 
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -100,13 +102,25 @@ export function Contact() {
             {errors.message && <span className="text-xs text-rose-400">{errors.message.message}</span>}
           </label>
           <div className="col-span-full flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
-              disabled={status === 'loading'}
-            >
-              {status === 'loading' ? 'Sending…' : 'Send message'}
-            </button>
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="submit"
+                className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+                disabled={status === 'loading'}
+              >
+                {status === 'loading' ? 'Sending…' : 'Send message'}
+              </button>
+              <a
+                href={whatsappUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Jaydeep Kadiya on WhatsApp"
+                className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-6 py-4 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300/70 hover:bg-emerald-500/20 hover:text-emerald-100"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                Chat on WhatsApp
+              </a>
+            </div>
             <p className="text-sm text-slate-400">
               Prefer email? <a href="mailto:jaydeepkadiya005@gmail.com" className="font-semibold text-slate-100 hover:text-cyan-200 transition">jaydeepkadiya005@gmail.com</a>
             </p>
