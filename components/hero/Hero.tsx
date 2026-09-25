@@ -178,7 +178,7 @@ export function Hero() {
             <div className="relative mx-auto w-full max-w-[280px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900 shadow-2xl shadow-slate-950/60">
               <div className="relative h-[300px] w-full">
                 <Image
-                  src="/images/jay-photo.jpg"
+                  src="/images/jay2.png"
                   alt="Jaydeep Kadiya"
                   fill
                   priority

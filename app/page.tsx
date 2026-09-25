@@ -5,7 +5,7 @@ import { Projects } from '../components/projects/Projects';
 import { Experience } from '../components/experience/Experience';
 import { Skills } from '../components/skills/Skills';
 import { Academics } from '../components/academics/Academics';
-import { Blog } from '../components/blog/Blog';
+import { Availability } from '../components/availability/Availability';
 import { Contact } from '../components/contact/Contact';
 import { Footer } from '../components/footer/Footer';
 
@@ -22,7 +22,7 @@ export default function HomePage() {
           <Experience />
           <Skills />
           <Academics />
-          <Blog />
+          <Availability />
           <Contact />
           <Footer />
         </div>
