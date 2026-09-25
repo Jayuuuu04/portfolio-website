@@ -56,7 +56,7 @@ export function Navbar() {
           <span className="inline-flex h-3 w-3 rounded-full bg-cyan-400" />
           <div>
             <p className="text-sm font-semibold text-cyan-300">Jaydeep Kadiya</p>
-            <p className="text-xs text-slate-400">Backend Developer</p>
+            {/* <p className="text-xs text-slate-400">Backend Developer</p> */}
           </div>
         </div>
 
