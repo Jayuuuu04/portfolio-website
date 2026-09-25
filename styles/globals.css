@@ -15,13 +15,17 @@ body {
   background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 35%), radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.14), transparent 28%), #020617;
 }
 
-html.light body {
-  background: #f8fafc;
-  color: #0f172a;
-}
+/* Kept inside @layer base: unlayered rules beat every layered utility, so at
+   top level these would override any text-* class applied to an anchor. */
+@layer base {
+  html.light body {
+    background: #f8fafc;
+    color: #0f172a;
+  }
 
-html.light a {
-  color: #0f172a;
+  html.light a:not([class*="text-"]) {
+    color: #0f172a;
+  }
 }
 
 * {

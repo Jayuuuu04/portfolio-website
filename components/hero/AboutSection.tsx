@@ -6,7 +6,7 @@ import { MapPin, GraduationCap, Briefcase, Code2, Trophy, BadgeCheck } from 'luc
 const stats = [
   { value: '2+', label: 'Years Experience' },
   { value: '2', label: 'Products Shipped' },
-  { value: '8.94', label: 'CGPA (B.E. CSE)' },
+  { value: '9.18', label: 'CGPA (B.E. CSE)' },
   { value: '5+', label: 'Technologies' },
 ];
 
@@ -21,7 +21,7 @@ const highlights = [
     icon: GraduationCap,
     title: 'Education',
     value: 'B.E. Computer Science & Engineering',
-    sub: 'HJD Institute (GTU) · 2023 · 8.94 CGPA',
+    sub: 'HJD Institute (GTU) · 2023 · 9.18 CGPA',
   },
   {
     icon: MapPin,

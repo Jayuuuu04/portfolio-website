@@ -115,7 +115,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat with Jaydeep Kadiya on WhatsApp"
-                className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-6 py-4 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300/70 hover:bg-emerald-500/20 hover:text-emerald-100"
+                className="inline-flex items-center gap-2 rounded-full bg-emerald-400 px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 Chat on WhatsApp

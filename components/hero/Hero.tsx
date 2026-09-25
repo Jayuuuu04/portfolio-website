@@ -24,7 +24,7 @@ const techStack = ['PHP', 'Node.js', 'Next.js', 'MySQL', 'AWS', 'REST APIs'];
 const quickStats = [
   { value: '2+', label: 'Years Exp.' },
   { value: '2', label: 'Products' },
-  { value: '8.94', label: 'CGPA' },
+  { value: '9.18', label: 'CGPA' },
 ];
 
 export function Hero() {
@@ -201,7 +201,7 @@ export function Hero() {
               <div className="rounded-2xl border border-white/10 bg-slate-900/60 px-4 py-3">
                 <p className="text-xs text-slate-500 uppercase tracking-widest">Education</p>
                 <p className="mt-1 text-sm font-medium text-slate-200">B.E. Computer Science (GTU)</p>
-                <p className="text-xs text-slate-500">8.94 CGPA · Graduated 2023</p>
+                <p className="text-xs text-slate-500">9.18 CGPA · Graduated 2023</p>
               </div>
               <div className="rounded-2xl border border-yellow-500/20 bg-yellow-500/5 px-4 py-3">
                 <p className="text-xs text-yellow-600 uppercase tracking-widest">🏆 Achievement</p>

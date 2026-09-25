@@ -21,7 +21,7 @@ const academics = [
     year: '2023',
     degree: 'B.E. Computer Science & Engineering',
     institution: 'HJD Institute of Technical Education & Research (GTU)',
-    result: '8.94 CGPA',
+    result: '9.18 CGPA',
     detail: 'Focused on backend systems, software engineering, data structures, and real-world integration projects.',
   },
 ];
