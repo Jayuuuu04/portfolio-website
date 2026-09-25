@@ -17,11 +17,12 @@ A modern one-page developer portfolio built with Next.js, TypeScript, Tailwind C
 
 ## Features
 
-- Responsive one-page layout with sections for About, Projects, Experience, Skills, Blogs, and Contact
+- Responsive one-page layout with sections for About, Projects, Experience, Skills, Academics, Availability, and Contact
 - Dark/Light theme toggle
 - Smooth animations and premium UI styling
 - SEO-friendly metadata and clean route structure
 - Contact form integration with EmailJS
+- WhatsApp click-to-chat buttons in the Availability, Contact, and Footer sections
 - Production-ready build configuration
 
 ## Getting Started
@@ -143,4 +144,4 @@ time. Changing them in the dashboard requires a **redeploy** to take effect.
 ## Notes
 
 - The project is built and verified with `npm run build`
-- If you want, you can also add analytics, more blog content, or a CMS integration
+- If you want, you can also add analytics or a CMS integration

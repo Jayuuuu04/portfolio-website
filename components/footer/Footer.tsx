@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { GitFork, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { whatsappUrl } from '../../data/contact';
 import { WhatsAppIcon } from '../ui/WhatsAppIcon';
 
