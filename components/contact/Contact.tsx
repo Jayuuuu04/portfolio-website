@@ -5,6 +5,10 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
 interface ContactFormValues {
   name: string;
   email: string;
@@ -21,22 +25,32 @@ export function Contact() {
   } = useForm<ContactFormValues>({ mode: 'onTouched' });
 
   const onSubmit = async (data: ContactFormValues) => {
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      console.error('EmailJS environment variables are missing. Set NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID and NEXT_PUBLIC_EMAILJS_PUBLIC_KEY.');
+      setStatus('error');
+      return;
+    }
+
     setStatus('loading');
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        SERVICE_ID,
+        TEMPLATE_ID,
         {
-          from_name: data.name,
-          from_email: data.email,
+          // Keys must match the {{variables}} in the EmailJS template.
+          name: data.name,
+          email: data.email,
+          title: `New portfolio message from ${data.name}`,
+          time: new Date().toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' }),
           message: data.message,
         },
-        'YOUR_USER_ID'
+        { publicKey: PUBLIC_KEY }
       );
       setStatus('success');
       reset();
     } catch (error) {
+      console.error('EmailJS send failed:', error);
       setStatus('error');
     }
   };

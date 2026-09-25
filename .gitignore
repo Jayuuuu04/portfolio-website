@@ -5,3 +5,5 @@ out
 .env*
 *.log
 package-lock.json
+# keep the example committed
+!.env.example
